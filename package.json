@@ -1,0 +1,34 @@
+{
+  "name": "lang",
+  "version": "1.0.0",
+  "description": "Programming language",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npm run build && npm run start:prod",
+    "start:ts": "ts-node ./src/index.ts",
+    "start:prod": "node ./build/index.js",
+    "dev": "nodemon",
+    "build": "rimraf ./build && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lehaisanya/lang.git"
+  },
+  "keywords": [
+    "language",
+    "compiler"
+  ],
+  "author": "lehaisanya <lehaisanya@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lehaisanya/lang/issues"
+  },
+  "homepage": "https://github.com/lehaisanya/lang#readme",
+  "devDependencies": {
+    "@types/node": "^16.9.1",
+    "nodemon": "^2.0.12",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
+}
